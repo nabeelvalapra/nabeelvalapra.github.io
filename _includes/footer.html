@@ -1,6 +1,15 @@
 <footer class="site-footer">
     {{ site.description }}<br />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-98637459-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
     Using <a href="http://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/gchauras/much-worse-jekyll-theme">Much-Worse</a> Theme.
     {% if site.analytics.provider and page.analytics != false %}
      :: Analytics by {{ site.analytics.provider }}
